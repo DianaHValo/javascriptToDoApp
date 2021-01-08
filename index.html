@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en>">
+<head>
+
+    <meta charset="UTF-8"/>
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0"/>
+     <title>To Do List</title>
+     <link rel="stylesheet" href="style.css"/>
+     <script src="script.js" defer></script>
+     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+        </style>
+</head>
+
+<body onload="LoadData()">
+
+    <h1>ToDos</h1>
+    <h2 id="SelectedDay">Monday</h2>
+    <small>Left click to mark as complete. <br>
+        Right click to delete the ToDo.</small>
+
+    <div class="Buttons">
+
+        <button onclick="MonBtnClick()" class="Mon">Mon</button>
+        <button onclick="TueBtnClick()"class="Tue">Tue</button>
+        <button onclick="WedBtnClick()"class="Wed">Wed</button>
+        <button onclick="ThuBtnClick()"class="Thu">Thu</button>
+        <button onclick="FriBtnClick()"class="Fri">Fri</button>
+        <button onclick="SatBtnClick()"class="Sat">Sat</button>
+        <button onclick="SunBtnClick()"class="Sun">Sun</button>
+    </div>
+    
+    <form id="form">
+        <input type="text" id="input"
+        class="input" placeholder="Enter your ToDo<3"
+        autocomplete="off"/>
+
+        <ul class="todos" id="todos">
+            
+
+        </ul>
+    </form>
+ 
+
+</body>
+
+
+</html>
